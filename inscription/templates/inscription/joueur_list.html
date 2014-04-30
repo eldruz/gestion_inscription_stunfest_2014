@@ -1,0 +1,11 @@
+{% extends "inscription/base.html" %}
+
+{% block title %} Liste des joueurs inscrits {% endblock %}
+
+{% block main %}
+
+{% load render_table from django_tables2 %}
+{% render_table liste_joueurs %}
+
+{% endblock %}
+

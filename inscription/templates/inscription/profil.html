@@ -1,0 +1,15 @@
+{% extends "inscription/base.html" %}
+{% block title %} Profil joueur {% endblock %}
+
+{% block main %}
+<ul>
+    <li>Pseudo : {{ info_joueur.pseudo }} </li>
+    <li>Nom : {{ info_joueur.nom }} </li>
+    <li>Prenom : {{ info_joueur.prenom }} </li>
+    <li>Email : {{ info_joueur.email }} </li>
+    <li>Telephone : {{ info_joueur.telephone }} </li>
+    <li>Numéro de Commande : {{ info_joueur.num_commande }} </li>
+</ul>
+
+{% endblock %}
+

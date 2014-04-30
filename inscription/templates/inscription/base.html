@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <link href="{% static 'inscription/stylesheets/screen.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css" />
+        <!--[if IE]>
+        <link href="{{STATIC_URL}}stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
+        <title> {% block title %}Acceuil{% endblock %} </title>
+    </head>
+
+    <body>
+
+        <section class=page>
+
+        <header class=logo>
+        <h1> Acceuil du site BRLHAAA </h1>
+        </header>
+
+        <section class=content>
+
+        <section class=main>
+        {% block main %}
+        {% endblock %}
+        </section> <!-- END MAIN -->
+
+        <section class=sidebar>
+        <ul class="liens-tournois">
+            <li><a class="tournois-cvs" href="#">CvS</a></li>
+            <li><a class="tournois-third_strike" href="#">3.3</a></li>
+            <li><a class="tournois-st" href="/inscription/tournoi/2X Legends/">2X</a></li>
+            <li><a class="tournois-sf4" href="#">SF4</a></li>
+            <li><a class="tournois-breakers" href="#">Breakers</a></li>
+            <li><a class="tournois-umvc3" href="#">UMvC3</a></li>
+            <li><a class="tournois-sxt" href="#">SxT</a></li>
+            <li><a class="tournois-kof13" href="#">Kof13</a></li>
+            <li><a class="tournois-sc5" href="#">SC5</a></li>
+            <li><a class="tournois-tekken" href="#">Tekken</a></li>
+        </ul>
+        </section> <!-- END SIDEBAR -->
+
+        </section> <!-- END CONTENT -->
+
+        <footer class=bottom>
+
+        </footer>
+
+        </section> <!-- END PAGE -->
+    </body>
+
+</html>
+

@@ -1,0 +1,16 @@
+{% extends "inscription/base.html" %}
+
+{% block title %} Fiche d'un joueur {% endblock %}
+
+{% block main %}
+
+<form action="/inscription/inscription/" method="post">{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit" value="Submit" />
+{{ form.tournois.value }}
+</form>
+
+{% endblock %}
+
+
+
