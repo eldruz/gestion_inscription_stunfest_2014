@@ -6,9 +6,8 @@ from inscription.models import Joueur, Tournoi, Participant
 
 urlpatterns = patterns('',
         url(r'^liste_joueurs/$', 'inscription.views.joueur_table_view', name='liste_joueurs'),
-        url(r'^liste_tournois/$', 'inscription.views.liste_tournois'),
         url(r'^inscription/$', 'inscription.views.fiche_inscription'),
         url(r'^profil/(?P<pseudo_joueur>.*?)/$','inscription.views.profil_joueur',name='profils'),
-        url(r'^tournoi/(?P<tournoi_titre>.*)/$', 'inscription.views.joueurs_inscrits_liste'),
+        url(r'^tournoi/(?P<tournoi_titre>.*)/$', 'inscription.views.joueurs_inscrits_liste', name='tournois'),
         )
 
