@@ -48,7 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'inscription',
     'django_tables2',
-)
+    )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,7 +57,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+    )
 
 ROOT_URLCONF = 'stunfest_2014.urls'
 
@@ -69,10 +69,14 @@ WSGI_APPLICATION = 'stunfest_2014.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+      'ENGINE': 'django.db.backends.mysql',
+      'NAME': 'stunfest',
+      'USER': 'eldruz',
+      'PASSWORD': 'stunfest',
+      'HOST': 'localhost',
+      'PORT': '3306',
+      }
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
