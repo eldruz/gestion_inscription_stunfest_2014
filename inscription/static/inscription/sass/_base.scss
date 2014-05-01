@@ -1,0 +1,22 @@
+@import "susy";
+
+// Gestion de la grille commune à tous les éléments
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+.page {
+    @include container;
+
+    .logo, .bottom, .navbar { clear:both; }
+
+    .content {
+        @include span-columns(12,12);
+
+        .main { @include span-columns(9,12); }
+        .sidebar { @include span-columns(3 omega, 12); }
+    }
+}
+

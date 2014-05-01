@@ -1,0 +1,41 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "base";
+@import "typo";
+
+.logo {
+  margin-bottom: 2em;
+  text-align: center;
+  background-color: #000;
+  padding: 2em;
+  h1 { 
+    font-size: 44px; 
+    color: #fff;
+  }
+}
+
+.navbar{
+  text-align: center;
+  padding: 1em;
+
+  .liens-nav {
+    @include horizontal-list;
+  }
+}
+
+.sidebar {
+  ul.liens-tournois {
+    text-align: right;
+    li {
+      @include no-bullets;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
