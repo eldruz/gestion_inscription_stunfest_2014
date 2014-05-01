@@ -23,10 +23,8 @@ def profil_joueur(request, pseudo_joueur):
     form = FicheInscriptionForm(initial={
       'pseudo': joueur.pseudo,
       'nom': joueur.nom,
-      'prenom': joueur.prenom,
-      'email': joueur.email,
-      'telephone': joueur.telephone,
       'num_commande': joueur.num_commande,
+      'infos': joueur.infos,
       'tournois': liste_tournoi_inscrit,
       })
     return render(request, 'inscription/inscription.html', {'form': form})
@@ -47,17 +45,13 @@ def fiche_inscription(request):
       # recuperation des informations du joueur
       pseudo = form.cleaned_data['pseudo']
       nom = form.cleaned_data['nom']
-      prenom = form.cleaned_data['prenom']
-      email = form.cleaned_data['email']
-      telephone = form.cleaned_data['telephone']
+      infos = form.cleaned_data['infos']
       num_commande = form.cleaned_data['num_commande']
 
       joueur = Joueur(
           pseudo=pseudo,
           nom=nom,
-          prenom=prenom,
-          email=email,
-          telephone=telephone,
+	  infos=infos,
           num_commande=num_commande)
 
       # on le sauvegarde/update dans la base

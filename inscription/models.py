@@ -3,10 +3,8 @@ from django.db import models
 class Joueur(models.Model):
     pseudo = models.CharField(max_length=254, primary_key=True)
     nom = models.CharField(max_length=254,blank=True,null=True)
-    prenom = models.CharField(max_length=254,blank=True,null=True)
-    email = models.EmailField(max_length=254,blank=True,null=True)
-    telephone = models.CharField(max_length=254,blank=True,null=True)
     num_commande = models.CharField(max_length=254,blank=True,null=True)
+    infos = models.CharField(max_length=254,blank=True,null=True)
 
     def __unicode__(self):
         return self.pseudo

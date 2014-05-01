@@ -24,10 +24,8 @@ class FicheInscriptionForm(forms.Form):
     )
   pseudo = forms.CharField(max_length=254, required=True)
   nom = forms.CharField(max_length=254, required=False)
-  prenom = forms.CharField(max_length=254, required=False)
-  email = forms.CharField(max_length=254, required=False)
-  telephone = forms.CharField(max_length=254, required=False)
   num_commande = forms.CharField(max_length=254, required=False)
+  infos = forms.CharField(max_length=254, required=False)
   tournois = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=OPTIONS, required=False)
 
 

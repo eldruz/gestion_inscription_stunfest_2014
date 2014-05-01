@@ -5,7 +5,7 @@ from inscription.models import Participant
 
 # Register your models here.
 class JoueurAdmin(admin.ModelAdmin):
-    list_display = ('pseudo', 'nom', 'prenom', 'email', 'telephone', 'num_commande')
+    list_display = ('pseudo', 'nom', 'num_commande', 'infos')
     search_fields = ['pseudo','num_commande']
 
 class ParticipantAdmin(admin.ModelAdmin):
