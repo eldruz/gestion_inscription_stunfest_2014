@@ -3,10 +3,10 @@ require "susy"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "static/stylesheets"
-sass_dir = "static/sass"
-images_dir = "static/images"
-javascripts_dir = "static/javascripts"
+css_dir = "inscription/static/inscription/stylesheets"
+sass_dir = "inscription/static/inscription/sass"
+images_dir = "inscription/static/inscription/images"
+javascripts_dir = "inscription/static/inscription/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
