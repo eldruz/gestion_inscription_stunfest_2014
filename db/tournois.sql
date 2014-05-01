@@ -1,0 +1,18 @@
+INSERT INTO stunfest.inscription_tournoi VALUES ('2X-solo', 'Super Street Fighter 2X', 'Arcade', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('2X-team', 'Super Street Fighter 2X', 'Arcade', '2014-05-04', 'Team', 32, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('2X-mirror', 'Super Street Fighter 2X', 'Arcade', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('SF4-solo', 'Super Street Fighter 4 Arcade Edition', 'Xbox360', '2014-05-04', 'Solo', 256, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('SF4-team', 'Super Street Fighter 4 Arcade Edition', 'Xbox360', '2014-05-04', 'Team', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Breakers', 'Breakers Revenge', 'Arcade', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Cvs2-apo', 'Capcom vs Snk 2', 'PS2', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Cvs2-team', 'Capcom vs Snk 2', 'PS2', '2014-05-04', 'Team', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('UMvC3', 'Ultimate Marvel vs Capcom 3', 'Xbox360', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('SC5', 'SoulCalibur 5', 'Xbox360', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('3.3-team', 'Street Fighter 3.3', 'Arcade', '2014-05-04', 'Team', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('3.3-tier', 'Street Fighter 3.3', 'Arcade', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('TTT2', 'Tekken Tag Tournament 2', 'PS3', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Kof13-solo', 'The King of Fighters 13', 'Xbox360', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Kof-all-stars', 'The King of Fighters All Stars', 'Xbox360', '2014-05-04', 'Team', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Stuntacus', 'Stuntacus GodTiers of the Arena', 'All', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('Jojo', 'Jojo Bizarre Adventures All Star', 'PS3', '2014-05-04', 'Solo', 64, 10);
+INSERT INTO stunfest.inscription_tournoi VALUES ('BBCP', 'BlazBlue Chrono Phantasma', 'PS3', '2014-05-04', 'Solo', 64, 10);
