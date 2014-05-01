@@ -23,8 +23,8 @@
 
   <header class=navbar>
     <ul class="liens-nav">
-      <li><a href="#">Inscription</a></li>
-      <li><a href="#">Liste des Joueurs</a></li>
+      <li><a href="{% url 'inscription:inscription' %}">Inscription</a></li>
+      <li><a href="{% url 'inscription:joueurs' %}">Liste des Joueurs</a></li>
     </ul>
   </header>
 
@@ -38,23 +38,23 @@
     <section class=sidebar>
       <ul class="liens-tournois">
         <li><a class="tournois-2x-team" href="{% url 'inscription:tournois' '2X-team'  %}">2X Team 3v3</a></li>
-        <li><a class="tournois-2x-mirror" href="#">2x Mirror 1v1</a></li>
+        <li><a class="tournois-2x-mirror" href="{% url 'inscription:tournois' '2X-mirror'  %}">2x Mirror 1v1</a></li>
         <li><a class="tournois-2x-solo" href="{% url 'inscription:tournois' '2X-solo'  %}">2x Solo</a></li>
-        <li><a class="tournois-cvs-apo" href="#">CvS2 Apocalypse</a></li>
-        <li><a class="tournois-cvs-team" href="#">CvS2 Team 2v2</a></li>
-        <li><a class="tournois-sf4-ratio" href="#">SF4 Ratio Team 2v2</a></li>
-        <li><a class="tournois-sf4-solo" href="#">SF4 Solo</a></li>
-        <li><a class="tournois-3s-tier" href="#">3.3 Solo Tier</a></li>
-        <li><a class="tournois-3s-team" href="#">3.3 Team 3v3</a></li>
-        <li><a class="tournois-breakers" href="#">Breakers</a></li>
-        <li><a class="tournois-umvc3" href="#">UMvC3</a></li>
-        <li><a class="tournois-kof13" href="#">Kof13 Solo</a></li>
-        <li><a class="tournois-kof-all" href="#">Kof All Star</a></li>
-        <li><a class="tournois-sc5" href="#">SoulCalibur 5</a></li>
-        <li><a class="tournois-tekken" href="#">Tekken Tag Tournament 2</a></li>
-        <li><a class="tournois-stuntacus" href="#">Stuntacus</a></li>
-        <li><a class="tournois-jojo" href="#">Jojo</a></li>
-        <li><a class="tournois-blazblue" href="#">Blazblue CP</a></li>
+        <li><a class="tournois-cvs-apo" href="{% url 'inscription:tournois' 'Cvs2-apo'  %}">CvS2 Apocalypse</a></li>
+        <li><a class="tournois-cvs-team" href="{% url 'inscription:tournois' 'Cvs2-team'  %}">CvS2 Team 2v2</a></li>
+        <li><a class="tournois-sf4-ratio" href="{% url 'inscription:tournois' 'SF4-ratio'  %}">SF4 Ratio Team 2v2</a></li>
+        <li><a class="tournois-sf4-solo" href="{% url 'inscription:tournois' 'SF4-solo'  %}">SF4 Solo</a></li>
+        <li><a class="tournois-3s-tier" href="{% url 'inscription:tournois' '3.3-tier'  %}">3.3 Solo Tier</a></li>
+        <li><a class="tournois-3s-team" href="{% url 'inscription:tournois' '3.3-team'  %}">3.3 Team 3v3</a></li>
+        <li><a class="tournois-breakers" href="{% url 'inscription:tournois' 'Breakers'  %}">Breakers</a></li>
+        <li><a class="tournois-umvc3" href="{% url 'inscription:tournois' 'UMvC3'  %}">UMvC3</a></li>
+        <li><a class="tournois-kof13" href="{% url 'inscription:tournois' 'Kof13-solo'  %}">Kof13 Solo</a></li>
+        <li><a class="tournois-kof-all" href="{% url 'inscription:tournois' 'Kof-all-stars'  %}">Kof All Star</a></li>
+        <li><a class="tournois-sc5" href="{% url 'inscription:tournois' 'SC5'  %}">SoulCalibur 5</a></li>
+        <li><a class="tournois-tekken" href="{% url 'inscription:tournois' 'TTT2'  %}">Tekken Tag Tournament 2</a></li>
+        <li><a class="tournois-stuntacus" href="{% url 'inscription:tournois' 'Stuntacus'  %}">Stuntacus</a></li>
+        <li><a class="tournois-jojo" href="{% url 'inscription:tournois' 'Jojo'  %}">Jojo</a></li>
+        <li><a class="tournois-blazblue" href="{% url 'inscription:tournois' 'BBCP'  %}">Blazblue CP</a></li>
       </ul>
     </section> <!-- END SIDEBAR -->
 
