@@ -4,7 +4,7 @@
 
 {% block main %}
         <h1> {{titre}} </h1>
-        <p> Il reste {{ nb_places }} disponibles pour ce tournoi </p>
+        <p> Il reste {{ nb_places }} places disponibles pour ce tournoi </p>
         <ul> Participants :
             {% for joueur in liste_joueurs %}
             <li> {{ joueur.pseudo }} </li>
