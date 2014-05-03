@@ -9,7 +9,7 @@ from django_tables2 import RequestConfig
 
 def joueur_table_view(request):
   table = JoueurTable(Joueur.objects.all())
-  RequestConfig(request).configure(table)
+  RequestConfig(request, paginate={'per_page': 10000}).configure(table)
   return render(request, 'inscription/joueur_list.html', {'liste_joueurs': table})
 
 def profil_joueur(request, pseudo_joueur):
